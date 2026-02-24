@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* Wrapper to center navbar */
+.nav-wrapper {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.glass-nav {
+  width: 70%;
+  max-width: 900px;
+  height: 70px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+
+  border-radius: 50px;
+
+  background: rgba(20, 20, 30, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: white;
+  animation: slideDown 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.glass-nav:hover {
+  transform: translateY(-2px);
+  transition: 0.3s ease;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  font-size : 1.1rem;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  color: #00e0ff;
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.active {
+  color: #00e0ff;
+  font-weight: 600;
+}

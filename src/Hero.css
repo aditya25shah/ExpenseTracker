@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+
+        background-image:
+        url(https://wallpapers.com/images/hd/1920x1080-full-hd-nature-towering-pine-trees-j8vw25l5rijhq7yc.jpg);
+        background: rgba(0, 0, 0, 0.6);
+
+        background-size: cover;
+        background-position: center;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+  margin-top: 15px;
+  opacity: 0.8;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.primary-btn {
+    background: #00e0ff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+}
+
+
+body{
+  margin : 0;
+}
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(https://wallpapers.com/images/hd/1920x1080-full-hd-nature-towering-pine-trees-j8vw25l5rijhq7yc.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);  /* controls opacity */
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.primary-btn {
+  background: linear-gradient(135deg, #00e0ff, #0077ff);
+  border: none;
+  padding: 14px 34px;
+  border-radius: 40px;
+  font-weight: 600;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 224, 255, 0.4);
+}
+.hero {
+  background-attachment: fixed;
+}
