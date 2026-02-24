@@ -67,3 +67,7 @@ body {
     opacity: 1;
   }
 }
+.active {
+  color: #00e0ff;
+  font-weight: 600;
+}
