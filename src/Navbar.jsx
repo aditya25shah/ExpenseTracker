@@ -7,7 +7,9 @@ function Navbar() {
   const location = useLocation()
 
   const currentPath = location.pathname
-
+  if (currentPath === "/" || currentPath === "/signup" || currentPath === "/login") {
+    return null
+  }
   return (
     <div className="nav-wrapper">
       <nav className="glass-nav">
@@ -46,7 +48,7 @@ function Navbar() {
           )}
 
           {currentPath !== "/" && (
-            <li onClick={() => navigate('/')}>
+            <li onClick={() => navigate('/home')}>
               Home
             </li>
           )}
